@@ -1,0 +1,22 @@
+body {
+    background-color: #212529;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #e7e7e7;
+    padding-top: 15px;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.child {
+    flex: 1 0 21%;
+    margin: 10px;
+}
+.child:nth-child(5n+1) {
+        clear: left;
+}
+.child h5 {
+    max-width: 250px;
+}

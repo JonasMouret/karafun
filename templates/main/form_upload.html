@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <div>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="link_youtube">Add youtube link: </label>
+                <input id="link_youtube" type="text" name="link_youtube" value="{{ current_name }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</section>
+{% endblock content %}
