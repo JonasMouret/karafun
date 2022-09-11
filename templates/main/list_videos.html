@@ -9,7 +9,6 @@
     <div class="parent">
         {% for video in videos %}
         <div class="child">
-            
             <video width='250' controls preload="metadata" poster="{{video.thumbnail}}">
                 <source src="{{video.video.url}}" type='video/mp4'>
                 Your browser does not support the video tag.
